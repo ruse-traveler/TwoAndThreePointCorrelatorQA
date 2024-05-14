@@ -1,0 +1,8 @@
+src/*
+!src/TwoPointCorrelatorQA.cc
+!src/TwoPointCorrelatorQA.h
+!src/TwoPointCorrelatorQAConfig.h
+!src/autogen.sh
+!src/configure.ac
+!src/Makefile.am
+!src/sphx-build
