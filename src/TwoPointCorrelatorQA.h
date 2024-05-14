@@ -48,6 +48,7 @@ class TwoPointCorrelatorQA : public SubsysReco {
   private:
 
     // private methods
+    void BuildHistograms();
     void GrabNodes(PHCompositeNode* topNode);
 
     // f4a memebers

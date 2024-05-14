@@ -47,7 +47,7 @@ TwoPointCorrelatorQA::~TwoPointCorrelatorQA() {
 
 
 
-// public methods -------------------------------------------------------------
+// fun4all methods ------------------------------------------------------------
 
 int TwoPointCorrelatorQA::Init(PHCompositeNode* topNode) {
 
@@ -89,5 +89,35 @@ int TwoPointCorrelatorQA::End(PHCompositeNode *topNode) {
   return Fun4AllReturnCodes::EVENT_OK;
 
 }  // end 'End(PHCompositeNode*)'
+
+
+
+// private methods ------------------------------------------------------------
+
+void TwoPointCorrelatorQA::BuildHistograms() {
+
+  // print debug message
+  if (m_config.doDebug && (Verbosity() > 0)) {
+    std::cout << "TwoPointCorrelatorQA::BuildHistograms() Building qa histograms" << std::endl;
+  }
+
+  /* TODO fill in */
+  return;
+
+}  // end 'BuildHistograms()'
+
+
+
+void TwoPointCorrelatorQA::GrabNodes(PHCompositeNode* topNode) {
+
+  // print debug message
+  if (m_config.doDebug && (Verbosity() > 0)) {
+    std::cout << "TwoPointCorrelatorQA::GrabNodes(PHCompositeNode*) Grabbing input nodes" << std::endl;
+  }
+
+  /* TODO fill in */
+  return;
+
+}  // end 'GrabNodes(PHCompositeNode*)'
 
 // end ------------------------------------------------------------------------

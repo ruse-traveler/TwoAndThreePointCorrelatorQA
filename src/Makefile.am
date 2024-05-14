@@ -14,35 +14,17 @@ AM_CPPFLAGS = \
   -I$(ROOTSYS)/include
 
 pkginclude_HEADERS = \
-  TrksInJetQA.h \
-  TrksInJetQAHist.h \
-  TrksInJetQATypes.h \
-  TrksInJetQAConfig.h \
-  TrksInJetQABaseFiller.h \
-  TrksInJetQAInJetFiller.h \
-  TrksInJetQAInclusiveFiller.h \
-  TrksInJetQABaseManager.h \
-  TrksInJetQAHitManager.h \
-  TrksInJetQAClustManager.h \
-  TrksInJetQATrkManager.h \
-  TrksInJetQAJetManager.h
+  TwoPointCorrelatorQA.h \
+  TwoPointCorrelatorQAConfig.h
 
 if ! MAKEROOT6
   ROOT5_DICTS = \
-    TrksInJetQA_Dict.cc
+    TwoPointCorrelatorQA_Dict.cc
 endif
 
 libtwopointcorrelatorqa_la_SOURCES = \
   $(ROOT5_DICTS) \
-  TrksInJetQA.cc \
-  TrksInJetQABaseFiller.cc \
-  TrksInJetQAInJetFiller.cc \
-  TrksInJetQAInclusiveFiller.cc \
-  TrksInJetQABaseManager.cc \
-  TrksInJetQAHitManager.cc \
-  TrksInJetQAClustManager.cc \
-  TrksInJetQATrkManager.cc \
-  TrksInJetQAJetManager.cc
+  TwoPointCorrelatorQA.cc
 
 libtwopointcorrelatorqa_la_LDFLAGS = \
   -L$(libdir) \
